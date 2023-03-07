@@ -1,0 +1,43 @@
+button{
+    width: 180px;
+}
+
+#button-div{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    z-index: 1; /* this is how forward or backward an element is on a screen */
+}
+
+.swal-icon img{
+    width: 80px;
+    height: 80px;
+}
+
+/* modal (background) */
+.modal{
+    display: none; /* hidden by default */
+    position: fixed; /* making it stay in place */
+    z-index: 1; /* making it displayed at the front of the screen */
+    padding-top: 100px; /* location of the modal box */
+    left: 0;
+    top: 0;
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    overflow: auto; /* enabling scrolling of the screen if needed */
+    background-color: black; /* fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* black w/opacity */
+}
+
+/* modal content */
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+}
